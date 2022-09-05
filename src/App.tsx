@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       
+        <HelloWorld />
+        <br/>
         <button onClick={() => {
           setNumber(number + 1)
           setText("üssün")
