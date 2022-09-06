@@ -1,8 +1,12 @@
+export interface TitlePropTypes {
+    title: string
+    bgColor: string
+}
 
-
-const Title = () => {
+const Title = (props: TitlePropTypes) => {
+    const { title,bgColor} = props;
     return (
-        <div style={{backgrounColor:bg-color}}>
+        <div style={{ backgroundColor: bgColor }}>
             {title}
         </div>
     )
