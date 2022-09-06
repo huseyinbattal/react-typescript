@@ -1,14 +1,18 @@
 export interface PropTypes{
-    userArray: [],
-    userObj: {},
-    
+    userArray?:Array<string> | number[],
+    userObj: {
+        userName: string,
+        userLastName:string,
+        },
 }
 
 
 const ArrayObjects=(props:PropTypes)=> {
   return (
       <div>
-  
+          {props.userObj.userName}
+       -
+          {props.userObj.userLastName}
       </div>
   )
 }

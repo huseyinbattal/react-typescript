@@ -3,6 +3,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import Title from './components/title';
 import ParentComponent from './components/ParentComponent';
+import ArrayObjects from './components/ArrayObjects';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -10,6 +11,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ArrayObjects userObj={{userName:"Test", userLastName:"deneme"}} />
+        <br />
         <ParentComponent>
           {
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ullam nihil, velit dolorem officia sit? Nihil pariatur expedita cupiditate ipsum recusandae debitis temporibus delectus voluptates quasi laborum. Harum, quo voluptatem?</p>    
