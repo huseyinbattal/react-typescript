@@ -11,7 +11,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ArrayObjects userObj={{userName:"Test", userLastName:"deneme"}} />
+        <ArrayObjects
+          userObj={{ userName: "Test", userLastName: "deneme" }}
+        userArray={["a","b","c",6]}
+        />
         <br />
         <ParentComponent>
           {
