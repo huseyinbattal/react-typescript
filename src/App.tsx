@@ -11,14 +11,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ArrayObjects
+        <h1>
+          <ArrayObjects
+            otherUserArray={[{userName:"Hüseyin",userLastName:"Battal"},{userName:"Alper",userLastName:"Battal"}]}
           userObj={{ userName: "Test", userLastName: "deneme" }}
         userArray={["a","b","c"]}
         />
         <br />
         <ParentComponent>
           {
-<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque rerum inventore sint unde esse provident temporibus similique quibusdam in, repellendus ab et. Ipsa temporibus illum fugiat voluptatum. Quisquam temporibus voluptatibus harum. Ex provident fugiat blanditiis similique ratione consectetur iusto voluptate maxime perspiciatis quis, laboriosam omnis quaerat cupiditate maiores ipsa nulla.</h1>    
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque rerum inventore sint unde esse provident temporibus similique quibusdam in, repellendus ab et. Ipsa temporibus illum fugiat voluptatum. Quisquam temporibus voluptatibus harum. Ex provident fugiat blanditiis similique ratione consectetur iusto voluptate maxime perspiciatis quis, laboriosam omnis quaerat cupiditate maiores ipsa nulla.</p>    
           }
         </ParentComponent>
         <br/>
@@ -35,6 +37,7 @@ function App() {
         {number}
         <br />
         {text}
+       </h1>
       </header>
     </div>
   );

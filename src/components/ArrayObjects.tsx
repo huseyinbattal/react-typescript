@@ -1,5 +1,11 @@
 export interface PropTypes {
-    userArray?: Array<string> | string[],
+    
+    userArray?: Array<string> | string[],    
+
+    otherUserArray: Array<{
+        userName: string,
+        userLastName: string}>,
+    
     userObj: {
         userName: string,
         userLastName: string,
@@ -9,7 +15,7 @@ export interface PropTypes {
 
 const ArrayObjects = (props: PropTypes) => {
     return (
-        <div>
+        <h1>
             {props.userObj.userName}
             -
             {props.userObj.userLastName}
@@ -17,13 +23,23 @@ const ArrayObjects = (props: PropTypes) => {
             {props.userArray?.map((item,index:number) => {
                 return (
                     <div key={index}>
-                        {item}
+                        {item.toUpperCase()}
+        </div>
+    )
+            })}
+            
+            {props.otherUserArray?.map((item,index:number) => {
+                return (
+                    <div key={index}>
+                        {item.userName.toLocaleUpperCase()}{" "}
+                        {item.userLastName.toLocaleUpperCase()}
+
         </div>
     )
 })}
 
 
-        </div>
+        </h1>
     )
 }
 
