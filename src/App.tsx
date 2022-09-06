@@ -13,12 +13,12 @@ function App() {
       <header className="App-header">
         <ArrayObjects
           userObj={{ userName: "Test", userLastName: "deneme" }}
-        userArray={["a","b","c",6]}
+        userArray={["a","b","c"]}
         />
         <br />
         <ParentComponent>
           {
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ullam nihil, velit dolorem officia sit? Nihil pariatur expedita cupiditate ipsum recusandae debitis temporibus delectus voluptates quasi laborum. Harum, quo voluptatem?</p>    
+<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque rerum inventore sint unde esse provident temporibus similique quibusdam in, repellendus ab et. Ipsa temporibus illum fugiat voluptatum. Quisquam temporibus voluptatibus harum. Ex provident fugiat blanditiis similique ratione consectetur iusto voluptate maxime perspiciatis quis, laboriosam omnis quaerat cupiditate maiores ipsa nulla.</h1>    
           }
         </ParentComponent>
         <br/>
