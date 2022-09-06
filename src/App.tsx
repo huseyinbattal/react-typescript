@@ -11,7 +11,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ParentComponent>
-          Parent Component
+          {
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ullam nihil, velit dolorem officia sit? Nihil pariatur expedita cupiditate ipsum recusandae debitis temporibus delectus voluptates quasi laborum. Harum, quo voluptatem?</p>    
+          }
         </ParentComponent>
         <br/>
         <Title subtitle={300} title='Hello!' bgColor='red' />

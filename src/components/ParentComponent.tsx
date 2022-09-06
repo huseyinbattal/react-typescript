@@ -1,5 +1,3 @@
-
-
 interface PropTypes{
     children:React.ReactNode 
 }
