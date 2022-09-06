@@ -1,6 +1,5 @@
 
-
-const HelloWorld = (props:{text:string,isActive:boolean,number:number,onClick:()=>void}) => {
+const HelloWorld = (props: { text: string, isActive: boolean, number: number, onClick: () => void }) => {
   return (
     <div onClick={props.onClick}>
       <br/>
