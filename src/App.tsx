@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Title title='Hello!' bgColor='red' />
+        <Title subtitle={300} title='Hello!' bgColor='red' />
         <HelloWorld isActive text='Hello' onClick={() => {console.log("Merhaba")
         }} number={10} />
         <br/>
