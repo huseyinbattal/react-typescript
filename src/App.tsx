@@ -8,11 +8,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HelloWorld />
+        <HelloWorld isActive text='Hello' onClick={() => {console.log("Merhaba")
+        }} number={10} />
         <br/>
         <button onClick={() => {
           setNumber(number + 1)
-          setText("üssün")
+          setText("hb")
         }} >Sayi Arttır</button>
         <br/> 
         {number}
