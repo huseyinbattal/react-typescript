@@ -15,7 +15,7 @@ export interface PropTypes {
 
 const ArrayObjects = (props: PropTypes) => {
     return (
-        <h1>
+        <div>
             {props.userObj.userName}
             -
             {props.userObj.userLastName}
@@ -39,7 +39,7 @@ const ArrayObjects = (props: PropTypes) => {
 })}
 
 
-        </h1>
+        </div>
     )
 }
 

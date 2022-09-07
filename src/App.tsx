@@ -9,17 +9,22 @@ function App() {
   const [number, setNumber] = useState(0);
   const [text, setText] = useState<string>("u")
   
-  const logToConsole = (parametre:string) => {
+  const logToConsole = (parametre: string):void => {
   console.log(parametre)
 }
 
+  const calculateNumber = (s1:number,s2:number):number => {
+    return s1+s2
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
-      <button onClick={()=>{logToConsole("Selam")}}>Yazdır</button>
-        <h1>
+       {calculateNumber(5,6).toString().toUpperCase()}
+      <button onClick={()=>{logToConsole("test")}}>Yazdır</button>
+        <div>
           <ArrayObjects
-            otherUserArray={[{userName:"Hüseyin",userLastName:"Battal"},{userName:"Alper",userLastName:"Battal"}]}
+            otherUserArray={[{userName:"Hüseyin",userLastName:"Battal"},{userName:"Emir",userLastName:"Battal"}]}
           userObj={{ userName: "Test", userLastName: "deneme" }}
         userArray={["a","b","c"]}
         />
@@ -43,7 +48,7 @@ function App() {
         {number}
         <br />
         {text}
-       </h1>
+       </div>
       </header>
     </div>
   );
