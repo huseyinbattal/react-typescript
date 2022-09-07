@@ -7,6 +7,7 @@ import ArrayObjects from './components/ArrayObjects';
 import TestClick from './components/TestClick';
 
 function App() {
+
   const [number, setNumber] = useState(0);
   const [text, setText] = useState<string>("u")
   
@@ -17,13 +18,17 @@ function App() {
   const calculateNumber = (s1:number,s2:number):number => {
     return s1+s2
   }
+
+  const waitThree
   
   return (
     <div className="App">
       <header className="App-header">
 
+        <button>Tıkla ve 3 saniye bekle</button>
+
         <TestClick onClick={() => {
-          return "aaa"
+          alert("ss")
         }} />
 
        {calculateNumber(5,6).toString().toUpperCase().padEnd(3,"*")}

@@ -1,12 +1,12 @@
 export interface PropTypes{
-onClick:()=>string
+onClick:(str:string)=>void
 }
 
 
 const TestClick = (props:PropTypes) => {
     return (
         <div onClick={() => {
-            props.onClick()
+            props.onClick("test")
         }}>
             Test Click
         </div>
