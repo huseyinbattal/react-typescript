@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       {calculateNumber(5,6).toString().toUpperCase()}
+       {calculateNumber(5,6).toString().toUpperCase().padEnd(25,"*")}
       <button onClick={()=>{logToConsole("test")}}>Yazdır</button>
         <div>
           <ArrayObjects
