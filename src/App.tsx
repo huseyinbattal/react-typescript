@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <button onClick={logToConsole("Selam")}>Yazdır</button>
+      <button onClick={()=>{logToConsole("Selam")}}>Yazdır</button>
         <h1>
           <ArrayObjects
             otherUserArray={[{userName:"Hüseyin",userLastName:"Battal"},{userName:"Alper",userLastName:"Battal"}]}
