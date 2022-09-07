@@ -7,7 +7,12 @@ import ArrayObjects from './components/ArrayObjects';
 
 function App() {
   const [number, setNumber] = useState(0);
-  const [text,setText]=useState<string>("u")
+  const [text, setText] = useState<string>("u")
+  
+  const logToConsole = (parametre) => {
+  console.log(parametre)
+}
+
   return (
     <div className="App">
       <header className="App-header">
