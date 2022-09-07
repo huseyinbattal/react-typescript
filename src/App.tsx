@@ -19,7 +19,13 @@ function App() {
     return s1+s2
   }
 
-  const waitThree
+  const waitThreeSconds = ():Promise<string> => {
+    return new Promise<string>((resolve, reject) => {
+      setTimeout(() => {
+        resolve("deneme")
+      }, 1000*3);
+    })
+  }
   
   return (
     <div className="App">
