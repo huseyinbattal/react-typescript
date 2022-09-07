@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld';
 import Title from './components/title';
 import ParentComponent from './components/ParentComponent';
 import ArrayObjects from './components/ArrayObjects';
+import TestClick from './components/TestClick';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -20,6 +21,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <TestClick onClick={() => {
+          return "aaa"
+        }} />
+
        {calculateNumber(5,6).toString().toUpperCase().padEnd(3,"*")}
       <button onClick={()=>{logToConsole("test")}}>Yazdır</button>
         <div>
