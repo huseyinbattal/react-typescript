@@ -9,13 +9,14 @@ function App() {
   const [number, setNumber] = useState(0);
   const [text, setText] = useState<string>("u")
   
-  const logToConsole = (parametre) => {
+  const logToConsole = (parametre:string) => {
   console.log(parametre)
 }
 
   return (
     <div className="App">
       <header className="App-header">
+      <button>Yazdır</button>
         <h1>
           <ArrayObjects
             otherUserArray={[{userName:"Hüseyin",userLastName:"Battal"},{userName:"Alper",userLastName:"Battal"}]}
