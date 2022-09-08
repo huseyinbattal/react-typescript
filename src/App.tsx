@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
 import Title from './components/title';
@@ -8,8 +8,10 @@ import TestClick from './components/TestClick';
 
 function App() {
 
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState<number>(0)
   const [text, setText] = useState<string>("u")
+
+  const btnRef = useRef();
   
   const logToConsole = (parametre: string):void => {
   console.log(parametre)
