@@ -41,6 +41,13 @@ function App() {
           alert("ss")
         }} />
 
+        <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          console.log(e.target.value)
+        }} />
+        <button onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+          console.log(e.currentTarget)
+}}>Tıkla</button>
+
        {calculateNumber(5,6).toString().toUpperCase().padEnd(3,"*")}
       <button onClick={()=>{logToConsole("test")}}>Yazdır</button>
         <div>
