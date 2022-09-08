@@ -41,6 +41,12 @@ function App() {
           alert("ss")
         }} />
 
+        <div onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+          console.log(e)
+        }}>
+I am a DIV
+        </div>
+
         <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           console.log(e.target.value)
         }} />
