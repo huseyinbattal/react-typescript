@@ -19,7 +19,7 @@ function App() {
     return s1+s2
   }
 
-  const waitThreeSconds = ():Promise<string> => {
+  const waitThreeSeconds = ():Promise<string> => {
     return new Promise<string>((resolve, reject) => {
       setTimeout(() => {
         resolve("deneme")
@@ -32,7 +32,9 @@ function App() {
       <header className="App-header">
 
         <button onClick={() => {
-          waitThreeSconds().then((result))
+          waitThreeSeconds().then((results: string) => {
+            alert(results)
+          })
         }} >Tıkla ve 3 saniye bekle</button>
 
         <TestClick onClick={() => {
