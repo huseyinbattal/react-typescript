@@ -11,7 +11,7 @@ function App() {
   const [number, setNumber] = useState<number>(0)
   const [text, setText] = useState<string>("u")
 
-  const btnRef = useRef();
+  const btnRef = useRef<HTMLButtonElement>(null);
   
   const logToConsole = (parametre: string):void => {
   console.log(parametre)
@@ -52,11 +52,15 @@ I am a DIV
         <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           console.log(e.target.value)
         }} />
-        <button onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+
+        <button  ref={btnRef}  onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
           console.log(e.currentTarget)
 }}>Tıkla</button>
 
-       {calculateNumber(5,6).toString().toUpperCase().padEnd(3,"*")}
+        {calculateNumber(5, 6).toString().toUpperCase().padEnd(3, "*")}
+        
+
+
       <button onClick={()=>{logToConsole("test")}}>Yazdır</button>
         <div>
           <ArrayObjects
