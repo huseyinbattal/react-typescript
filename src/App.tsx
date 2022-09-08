@@ -31,7 +31,9 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <button>Tıkla ve 3 saniye bekle</button>
+        <button onClick={() => {
+          waitThreeSconds().then((result))
+        }} >Tıkla ve 3 saniye bekle</button>
 
         <TestClick onClick={() => {
           alert("ss")
