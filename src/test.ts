@@ -56,5 +56,9 @@ const customMyType: MyType = 5
 console.log(customMyType);
 
 class TestClass{
-    public static logConsole():void
+    public static logConsole(): void{
+        console.log("test")
+    }
 }
+
+TestClass.logConsole();
