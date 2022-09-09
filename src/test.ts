@@ -23,3 +23,7 @@ export class User {
         return this.soyad
     }
 }
+
+const user: User = new User("Hüseyin", "Battal")
+
+console.log(user)
