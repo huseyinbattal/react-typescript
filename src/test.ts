@@ -8,4 +8,18 @@ export enum Drinks {
     TEA = 2
 }
 
-console.log(Drinks.COLA,Drinks.TEA,Drinks.COFFEE)
+console.log(Drinks.COLA, Drinks.TEA, Drinks.COFFEE)
+
+export class User {
+    ad: string
+    soyad: string
+
+    constructor(ad: string, soyad: string) {
+        this.ad = ad
+        this.soyad = soyad
+    }
+
+    getSoyad(): string{
+        return this.soyad
+    }
+}
