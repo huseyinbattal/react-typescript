@@ -35,3 +35,7 @@ const user: User = new User("Hüseyin", "Battal")
 user.getAd()
 
 console.log(user, user.getSoyad())
+
+export class BaseClass{
+    id: string
+}
