@@ -50,3 +50,7 @@ let cls: otherClass = new otherClass()
 cls.id = "h"
 
 export type MyType = "X" | "Y" | "Z" | 5
+
+const customMyType: MyType = "X"
+
+console.log(customMyType);
