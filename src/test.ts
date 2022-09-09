@@ -47,4 +47,4 @@ export class otherClass extends BaseClass{
 
 let cls: otherClass = new otherClass()
 
-cls.id="h"
+cls.id="h" 
