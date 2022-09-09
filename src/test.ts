@@ -11,7 +11,7 @@ export enum Drinks {
 console.log(Drinks.COLA, Drinks.TEA, Drinks.COFFEE)
 
 export class User {
-    ad: string
+    private ad: string
     soyad: string
 
     constructor(ad: string, soyad: string) {
@@ -19,11 +19,19 @@ export class User {
         this.soyad = soyad
     }
 
-    getSoyad(): string{
+    getAd(): string {
+        return this.ad
+    }
+
+    getSoyad(): string {
         return this.soyad
     }
 }
 
+
+
 const user: User = new User("Hüseyin", "Battal")
 
-console.log(user,user.getSoyad())
+user.getAd()
+
+console.log(user, user.getSoyad())
