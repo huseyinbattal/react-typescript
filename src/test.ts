@@ -51,6 +51,10 @@ cls.id = "h"
 
 export type MyType = "X" | "Y" | "Z" | 5
 
-const customMyType: MyType = "X"
+const customMyType: MyType = 5
 
 console.log(customMyType);
+
+class TestClass{
+    public static logConsole():void
+}
