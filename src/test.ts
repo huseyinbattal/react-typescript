@@ -7,3 +7,5 @@ export enum Drinks {
     COFFEE = 1,
     TEA = 2
 }
+
+console.log(Drinks.COLA,Drinks.TEA,Drinks.COFFEE)
