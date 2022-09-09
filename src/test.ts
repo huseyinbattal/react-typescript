@@ -1,1 +1,1 @@
-const customName:string="Test"
+export const customName:string="Test"
