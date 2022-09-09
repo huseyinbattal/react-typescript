@@ -26,4 +26,4 @@ export class User {
 
 const user: User = new User("Hüseyin", "Battal")
 
-console.log(user)
+console.log(user,user.getSoyad())
