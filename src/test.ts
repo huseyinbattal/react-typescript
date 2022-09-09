@@ -36,15 +36,17 @@ user.getAd()
 
 console.log(user, user.getSoyad())
 
-export class BaseClass{
+export class BaseClass {
     id: string | undefined
 
 }
 
-export class otherClass extends BaseClass{
+export class otherClass extends BaseClass {
 
 }
 
 let cls: otherClass = new otherClass()
 
-cls.id="h" 
+cls.id = "h"
+
+export type MyType = "X" | "Y" | "Z" | 5
